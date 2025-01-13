@@ -1,0 +1,105 @@
+.burger-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: $white;
+  z-index: 4;
+  transition: transform 0.5s;
+
+  &.hidden {
+    transform: translateX(110%);
+  }
+}
+
+.burger-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 64px;
+}
+
+.burger-item {
+  text-decoration: none;
+}
+
+.burger-img {
+  width: 40vw;
+}
+
+.burger-img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20vh auto 5vh;
+}
+
+.burger-icon-container {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 4vh;
+}
+.burger-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.burger-icon {
+  position: relative;
+  z-index: 2;
+  width: 40px;
+  height: 22px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  mix-blend-mode: difference;
+  cursor: pointer;
+}
+
+.burger-bar {
+  background: $dark;
+  height: 2px;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.burger-top-contaier {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 4vh;
+}
+
+.burger-close-icon {
+  width: 24px;
+  cursor: pointer;
+  transition: fill 0.4s;
+  fill: rgba($dark, 0);
+  &:hover {
+    fill: $dark;
+  }
+}
+
+@include breakpoint("medium") {
+  .burger-img {
+    width: 25vw;
+  }
+
+  .burger-top-contaier {
+    margin-bottom: 20vh;
+  }
+
+  .burger-img-container {
+    margin: 0;
+  }
+
+  .burger-items {
+    justify-content: center;
+    height: 100%;
+    align-items: flex-start;
+    font-weight: 300;
+    font-size: 5vw;
+  }
+}

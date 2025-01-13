@@ -1,6 +1,9 @@
 @import "bootstrap/scss/bootstrap-grid";
 
 @import "font";
+@import "var";
 @import "base";
 @import "layout";
-@import "modules/example";
+@import "modules/burger";
+@import "modules/banner";
+@import "modules/intro";

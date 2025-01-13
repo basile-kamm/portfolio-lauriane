@@ -1,0 +1,22 @@
+$dark: #000;
+$white: #fff;
+
+@mixin breakpoint($size) {
+  @if $size == "small" {
+    @media (max-width: 767px) {
+      @content;
+    }
+  } @else if $size == "medium" {
+    @media (min-width: 787px) {
+      @content;
+    }
+  } @else if $size == "large" {
+    @media (min-width: 991px) {
+      @content;
+    }
+  } @else if $size== "big" {
+    @media (min-width: 1800px) {
+      @content;
+    }
+  }
+}

@@ -12,3 +12,14 @@ img,
 video {
   display: block;
 }
+
+body {
+  font-family: "Creato Display";
+  color: $dark;
+}
+
+@include breakpoint("small") {
+  .desktop {
+    display: none;
+  }
+}
