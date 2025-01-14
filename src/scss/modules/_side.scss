@@ -1,0 +1,25 @@
+.side-stuff {
+  background: $dark;
+}
+
+.side-slider-container {
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.side-slide {
+  font-size: 200px;
+  font-style: italic;
+  display: inline-block;
+  color: $white;
+  animation: slider 20s linear infinite;
+}
+
+@keyframes slider {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}

@@ -3,12 +3,33 @@ footer {
   color: $white;
   height: 100vh;
   padding: 50px 12px 60px;
+  overflow: hidden;
 }
 
 .footer-credits {
   font-size: 12px;
   text-align: center;
-  margin-top: 10vh;
+  margin-top: 5vh;
+}
+
+.footer-zilba {
+  text-decoration: none;
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: -1px;
+    height: 1px;
+    right: -1px;
+    background: $white;
+    mix-blend-mode: difference;
+    transition: height 0.3s;
+  }
+
+  &:hover::before {
+    height: 100%;
+  }
 }
 
 .footer-up-arrow-container {
@@ -18,11 +39,14 @@ footer {
 
 .footer-up-arrow-link {
   border: 2px solid $white;
-  margin: 20vh 0 35px;
+  margin: 10vh 0 35px;
   padding: 8px 8px 5px;
   border-radius: 50px;
   transition: transform 0.7s;
 
+  &.hidden {
+    visibility: hidden;
+  }
   svg {
     rotate: -90deg;
   }
@@ -71,7 +95,7 @@ footer {
 
   span {
     position: absolute;
-    right: 15%;
+    right: 10%;
     top: 80%;
   }
 }
@@ -79,6 +103,7 @@ footer {
 @include breakpoint("medium") {
   footer {
     padding: 15vh 0 5vh;
+    height: 100vh;
   }
 
   .footer-title {
@@ -110,5 +135,18 @@ footer {
 
   .footer-credits {
     margin: 0;
+  }
+}
+
+@include breakpoint("big") {
+  .footer-title {
+    font-size: 20vw;
+    span {
+      transform: translateX(50%);
+    }
+  }
+
+  .footer-nav-item.mail {
+    font-size: 4vw;
   }
 }

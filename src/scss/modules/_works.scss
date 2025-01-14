@@ -5,6 +5,7 @@
   text-align: center;
   line-height: 97%;
   padding-top: 25vh;
+  white-space: nowrap;
 }
 
 .works {
@@ -57,9 +58,11 @@
   align-items: baseline;
 }
 .work-card {
-  border-bottom: 1px solid $dark;
+  border-bottom: 1.5px solid $dark;
   margin-top: 12px;
+  display: block;
   cursor: pointer;
+  text-decoration: none;
 
   &:hover {
     .works-card-img {
@@ -81,5 +84,10 @@
   }
   .works-card-type {
     font-size: 1vw;
+  }
+}
+@include breakpoint("big") {
+  .works-title {
+    font-size: 20vw;
   }
 }

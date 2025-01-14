@@ -16,6 +16,11 @@ video {
 body {
   font-family: "Creato Display";
   color: $dark;
+  overflow-x: hidden;
+
+  &.no-scroll {
+    overflow-y: hidden;
+  }
 }
 
 html {
@@ -24,6 +29,12 @@ html {
 
 @include breakpoint("small") {
   .desktop {
+    display: none;
+  }
+}
+
+@include breakpoint("medium") {
+  .mobile {
     display: none;
   }
 }
