@@ -12,4 +12,6 @@ document.addEventListener("DOMContentLoaded", function () {
     body.classList.remove("no-scroll");
     burgerContainer.classList.add("hidden");
   });
+
+  // Change language fonction
 });
