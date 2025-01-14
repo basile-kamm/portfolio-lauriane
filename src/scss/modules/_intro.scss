@@ -24,6 +24,33 @@
   font-size: 20px;
   font-weight: 600;
   text-decoration: none;
+  position: relative;
+
+  .intro-cta-arrow {
+    transition: transform 0.4s;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: -10px;
+    height: 2px;
+    background: $dark;
+    transform-origin: left;
+    transform: scaleX(0);
+    transition: transform 0.4s;
+  }
+
+  &:hover {
+    .intro-cta-arrow {
+      transform: translateX(50%);
+    }
+    &::before {
+      transform: scaleX(100%);
+    }
+  }
 }
 
 .intro-cta-second {
@@ -33,6 +60,11 @@
   border: 1.5px solid $dark;
   border-radius: 20px;
   padding: 7px 7px 4px;
+  transition: transform 0.3s;
+
+  &:hover {
+    transform: scale(1.1);
+  }
 }
 
 .intro-cta-second-arrow {

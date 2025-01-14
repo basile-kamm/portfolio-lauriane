@@ -1,64 +1,94 @@
 <extends src="base-layout.html">
   <block name="content">
     <include src="html-modules/burger.html"> </include>
-    <section class="banner">
-      <h2 class="banner-subtitle">Interactive Media Designer</h2>
-      <h1 class="banner-title">Lauriane <br />Sauteur</h1>
-      <p class="banner-subtitle">Student</p>
-    </section>
-    <section class="intro">
-      <div class="container">
-        <div class="row">
-          <div class="col-12 col-md-8 offset-md-2">
-            <h2 class="intro-title">Hi!</h2>
-            <div class="intro-texts">
-              <p class="intro-text">
-                I am a student in Interactive Media Design and a multi-faceted
-                creator who enjoys experimenting across disciplines.
-              </p>
-              <p class="intro-text">
-                I enjoy exploring all kinds of fields, but I will admit that I
-                have a soft spot for video editing... but let's keep that
-                between us.
-              </p>
-              <p class="intro-text">
-                This site is about the world I live in and the work I create.
-              </p>
+    <main>
+      <section class="banner" id="top">
+        <h2 class="banner-subtitle">Interactive Media Designer</h2>
+        <h1 class="banner-title">Lauriane <br />Sauteur</h1>
+        <p class="banner-subtitle">Student</p>
+      </section>
+      <section class="intro">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-8 offset-md-2">
+              <h2 class="intro-title">Hi!</h2>
+              <div class="intro-texts">
+                <p class="intro-text">
+                  I am a student in Interactive Media Design and a multi-faceted
+                  creator who enjoys experimenting across disciplines.
+                </p>
+                <p class="intro-text">
+                  I enjoy exploring all kinds of fields, but I will admit that I
+                  have a soft spot for video editing... but let's keep that
+                  between us.
+                </p>
+                <p class="intro-text">
+                  This site is about the world I live in and the work I create.
+                </p>
+              </div>
+              <a href="about.html" class="intro-cta"
+                >know more about me
+                <svg
+                  width="17"
+                  class="intro-cta-arrow"
+                  height="14"
+                  viewBox="0 0 17 14"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    id="Arrow 2"
+                    d="M1 6.1C0.502944 6.1 0.1 6.50294 0.1 7C0.1 7.49706 0.502944 7.9 1 7.9L1 6.1ZM16.3697 7.6364C16.7212 7.28492 16.7212 6.71508 16.3697 6.3636L10.6422 0.636039C10.2907 0.284567 9.72084 0.284567 9.36937 0.636039C9.0179 0.987511 9.0179 1.55736 9.36937 1.90883L14.4605 7L9.36937 12.0912C9.0179 12.4426 9.0179 13.0125 9.36937 13.364C9.72084 13.7154 10.2907 13.7154 10.6422 13.364L16.3697 7.6364ZM1 7.9L15.7333 7.9V6.1L1 6.1L1 7.9Z"
+                    fill="black"
+                  />
+                </svg>
+              </a>
+              <a href="#works" class="intro-cta-second desktop">
+                <svg
+                  width="17"
+                  class="intro-cta-second-arrow"
+                  height="14"
+                  viewBox="0 0 17 14"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    id="Arrow 2"
+                    d="M1 6.1C0.502944 6.1 0.1 6.50294 0.1 7C0.1 7.49706 0.502944 7.9 1 7.9L1 6.1ZM16.3697 7.6364C16.7212 7.28492 16.7212 6.71508 16.3697 6.3636L10.6422 0.636039C10.2907 0.284567 9.72084 0.284567 9.36937 0.636039C9.0179 0.987511 9.0179 1.55736 9.36937 1.90883L14.4605 7L9.36937 12.0912C9.0179 12.4426 9.0179 13.0125 9.36937 13.364C9.72084 13.7154 10.2907 13.7154 10.6422 13.364L16.3697 7.6364ZM1 7.9L15.7333 7.9V6.1L1 6.1L1 7.9Z"
+                    fill="black"
+                  />
+                </svg>
+              </a>
             </div>
-            <a href="about.html" class="intro-cta"
-              >know more about me
-              <svg
-                width="17"
-                class="intro-cta-arrow"
-                height="14"
-                viewBox="0 0 17 14"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  id="Arrow 2"
-                  d="M1 6.1C0.502944 6.1 0.1 6.50294 0.1 7C0.1 7.49706 0.502944 7.9 1 7.9L1 6.1ZM16.3697 7.6364C16.7212 7.28492 16.7212 6.71508 16.3697 6.3636L10.6422 0.636039C10.2907 0.284567 9.72084 0.284567 9.36937 0.636039C9.0179 0.987511 9.0179 1.55736 9.36937 1.90883L14.4605 7L9.36937 12.0912C9.0179 12.4426 9.0179 13.0125 9.36937 13.364C9.72084 13.7154 10.2907 13.7154 10.6422 13.364L16.3697 7.6364ZM1 7.9L15.7333 7.9V6.1L1 6.1L1 7.9Z"
-                  fill="black"
-                />
-              </svg>
-            </a>
-            <a href="" class="intro-cta-second desktop">
-              <svg
-                width="17"
-                class="intro-cta-second-arrow"
-                height="14"
-                viewBox="0 0 17 14"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  id="Arrow 2"
-                  d="M1 6.1C0.502944 6.1 0.1 6.50294 0.1 7C0.1 7.49706 0.502944 7.9 1 7.9L1 6.1ZM16.3697 7.6364C16.7212 7.28492 16.7212 6.71508 16.3697 6.3636L10.6422 0.636039C10.2907 0.284567 9.72084 0.284567 9.36937 0.636039C9.0179 0.987511 9.0179 1.55736 9.36937 1.90883L14.4605 7L9.36937 12.0912C9.0179 12.4426 9.0179 13.0125 9.36937 13.364C9.72084 13.7154 10.2907 13.7154 10.6422 13.364L16.3697 7.6364ZM1 7.9L15.7333 7.9V6.1L1 6.1L1 7.9Z"
-                  fill="black"
-                />
-              </svg>
-            </a>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+      <section class="works" id="works">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <h2 class="works-title">My work</h2>
+              <div class="works-subtitle">
+                <p>Selected</p>
+                <p>project</p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 col-md-6">
+              <include src="html-modules/work-card.html">
+                { "cardValue":"furieuse", "cardTitle": "Furieuse", "cardType":
+                "trailer", "cardSubject": "motion design" }
+              </include>
+            </div>
+            <div class="col-12 col-md-6">
+              <include src="html-modules/work-card.html">
+                { "cardValue":"furieuse", "cardTitle": "Furieuse", "cardType":
+                "trailer", "cardSubject": "motion design" }
+              </include>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <include src="html-modules/footer.html"></include>
   </block>
 </extends>

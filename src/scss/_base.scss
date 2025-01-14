@@ -18,6 +18,10 @@ body {
   color: $dark;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 @include breakpoint("small") {
   .desktop {
     display: none;

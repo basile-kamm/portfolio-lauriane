@@ -1,0 +1,85 @@
+.works-title {
+  font-size: 27vw;
+  font-family: "Graziela";
+  font-weight: 400;
+  text-align: center;
+  line-height: 97%;
+  padding-top: 25vh;
+}
+
+.works {
+  padding-bottom: 6vw;
+}
+
+.works-subtitle {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1.5px solid $dark;
+  font-size: 13px;
+  font-weight: 800;
+  text-transform: uppercase;
+  padding-bottom: 3px;
+}
+
+.works-card-img {
+  width: 100%;
+  aspect-ratio: 16/9;
+  border: 0.5px solid $dark;
+  filter: grayscale(1);
+  transition: filter 0.5s;
+}
+
+.works-card-texts {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.works-card-title {
+  font-size: 20px;
+  font-weight: 400;
+  margin-top: 8px;
+}
+
+.works-card-type {
+  font-size: 13px;
+  font-style: italic;
+  font-weight: 300;
+}
+
+.works-card-subject {
+  font-size: 12px;
+}
+
+.works-card-titles {
+  display: flex;
+  gap: 3px;
+  align-items: baseline;
+}
+.work-card {
+  border-bottom: 1px solid $dark;
+  margin-top: 12px;
+  cursor: pointer;
+
+  &:hover {
+    .works-card-img {
+      filter: grayscale(0);
+    }
+  }
+}
+
+@include breakpoint("medium") {
+  .works-subtitle {
+    font-size: 2vw;
+  }
+
+  .works-card-subject {
+    font-size: 1vw;
+  }
+  .works-card-title {
+    font-size: 1.5vw;
+  }
+  .works-card-type {
+    font-size: 1vw;
+  }
+}
