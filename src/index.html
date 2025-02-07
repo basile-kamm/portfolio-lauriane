@@ -3,21 +3,31 @@
     <include src="html-modules/burger.html"> </include>
     <main>
       <section class="banner" id="top">
+        <div class="burger-navbar">
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <div class="burger-icon-container"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="burger-icon main" aria-label="Burger Menu">
+          <div class="burger-bar {{burgerColor}}"></div>
+          <div class="burger-bar {{burgerColor}}"></div>
+          <div class="burger-bar {{burgerColor}}"></div>
+        </div> -->
         <h2 class="banner-subtitle">Interactive Media Designer</h2>
         <h1 class="banner-title">Lauriane <br />Sauteur</h1>
         <p class="banner-subtitle" data-i18n="title_student">Student</p>
+        <video
+          src="/src/img/banner-video.mp4"
+          loop
+          muted
+          autoplay
+          class="banner-background"
+        ></video>
       </section>
-      <nav class="language-nav">
-        <label class="language">
-          FR
-          <input type="radio" name="language" />
-        </label>
-        <p>|</p>
-        <label class="language">
-          EN
-          <input type="radio" name="language" checked />
-        </label>
-      </nav>
       <section class="intro">
         <div class="container">
           <div class="row">

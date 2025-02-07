@@ -75,9 +75,8 @@
   text-decoration: underline 2px solid;
   transition: 0.4s;
   &:hover {
-    color: blue;
-    background: red;
-    scale: 2;
+    letter-spacing: 2px;
+    -webkit-text-stroke: 1px $dark;
   }
 }
 

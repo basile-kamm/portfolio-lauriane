@@ -1,5 +1,4 @@
 .banner {
-  background-image: url("/src/img/banner.jpg?as=webp");
   background-position: center;
   background-size: cover;
   height: 100vh;
@@ -9,6 +8,16 @@
   justify-content: flex-end;
   padding: 2vw 3vw;
   gap: 20px;
+}
+
+.banner-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
 }
 
 .banner-subtitle {
