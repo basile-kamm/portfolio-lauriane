@@ -95,7 +95,7 @@
 }
 
 .burger-close-icon {
-  width: 24px;
+  transform: scale(0.7);
   cursor: pointer;
   transition: fill 0.4s, rotate 0.4s;
   fill: rgba($dark, 0);
