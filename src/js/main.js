@@ -1,28 +1,15 @@
-const translations = {
-  en: {
-    bannerSubtitle: "Student",
-  },
-  fr: {
-    bannerSubtitle: "Élève",
-  },
-};
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
 
-const languageSelectors = document.querySelectorAll('input[name="language"]');
+window.addEventListener("load", () => {
+  const loader = document.querySelector(".loader-container");
+  loader.classList.add("hidden");
 
-languageSelectors.forEach((lgSelect) => {
-  lgSelect.addEventListener("change", (event) => {
-    setLanguage(event.value);
-    console.log("ye");
+  loader.addEventListener("transitionend", () => {
+    loader.remove();
   });
 });
-
-const setLanguage = (language) => {
-  if (language == "fr") {
-    console.log(language);
-  } else if (language == "en") {
-    console.log(language);
-  }
-};
 
 document.addEventListener("DOMContentLoaded", function () {
   const burgerIcon = document.querySelector(".burger-icon");
@@ -38,4 +25,19 @@ document.addEventListener("DOMContentLoaded", function () {
     body.classList.remove("no-scroll");
     burgerContainer.classList.add("hidden");
   });
+  if (window.screen.width <= 678) {
+    const cards = gsap.utils.toArray(".work-card");
+
+    cards.forEach((card) => {
+      gsap.to(card.querySelector(".work-card-image"), {
+        scrollTrigger: {
+          trigger: card,
+          start: "top 70%",
+          end: "bottom 70%",
+          toggleClass: "is-active",
+          markers: true,
+        },
+      });
+    });
+  }
 });

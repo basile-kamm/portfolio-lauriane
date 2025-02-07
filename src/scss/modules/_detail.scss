@@ -56,7 +56,9 @@
   }
 }
 
-.art-nest {
+.art-nest,
+.fish-city,
+.maison {
   position: relative;
   right: 0;
 }
@@ -92,6 +94,13 @@
 
     &.third {
       width: 33.3333%;
+    }
+
+    &.fish-city {
+      img {
+        height: 100%;
+        aspect-ratio: 16/9;
+      }
     }
   }
 
@@ -179,9 +188,20 @@
 
 @include breakpoint("large") {
   .detail-expo {
+    video,
+    img {
+      height: unset;
+      width: 100%;
+    }
+  }
+}
+
+@include breakpoint("small") {
+  .detail-thumbnail {
     video {
       height: unset;
       width: 100%;
+      transform: translateX(0);
     }
   }
 }
