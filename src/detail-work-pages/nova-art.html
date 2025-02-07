@@ -1,5 +1,5 @@
 <extends
-  src="./detail-work-layout.html"
+  src="./detail-work-layout-video.html"
   locals='{"title": "Nova Art Gallery", "type": "e-panel", "value": "nova-art"}'
 >
   <block name="header">
@@ -20,7 +20,12 @@
   </block>
   <block name="expo">
     <div class="detail-expo">
-      <img src="../img/work-details/puerto-expo.jpg" alt="" />
+      <video
+        src="/src/img/work-details/nova-art-expo.mp4"
+        loop
+        autoplay
+        muted
+      ></video>
     </div>
   </block>
   <block name="credits">

@@ -58,12 +58,27 @@
   justify-content: center;
   gap: 10px;
   margin-top: 10px;
+
+  & > * {
+    transition: transform 0.4s;
+    transform-origin: top;
+    &:hover {
+      transform: translateY(60%) scaleY(120%);
+    }
+  }
 }
 
 .about-cv-cta {
   margin-top: 10px;
   font-size: 25px;
   font-weight: 400;
+  text-decoration: underline 2px solid;
+  transition: 0.4s;
+  &:hover {
+    color: blue;
+    background: red;
+    scale: 2;
+  }
 }
 
 .about-age {
@@ -110,5 +125,42 @@
 
   .about-resume-img {
     scale: 1;
+  }
+
+  .about-swiss-icon {
+    width: 60%;
+
+    transform-origin: top right;
+  }
+
+  .about-age,
+  .about-skills,
+  .about-cv {
+    text-align: left;
+  }
+
+  .about-texts {
+    font-size: 24px;
+  }
+  .about-titles {
+    margin-bottom: 10px;
+  }
+
+  .about-skills-container {
+    justify-content: flex-start;
+  }
+  .about-quote {
+    font-size: 96px;
+    margin-bottom: 30vh;
+    padding-top: 8vh;
+  }
+}
+
+@include breakpoint("big") {
+  .about-title {
+    font-size: 20vw;
+  }
+  .about-resume-title {
+    font-size: 4vw;
   }
 }

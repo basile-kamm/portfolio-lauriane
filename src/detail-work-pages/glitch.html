@@ -1,5 +1,5 @@
 <extends
-  src="./detail-work-layout.html"
+  src="./detail-work-layout-video.html"
   locals='{"title": "Glitch", "type": "artistic video", "value": "glitch"}'
 >
   <block name="header">
@@ -24,7 +24,27 @@
   </block>
   <block name="expo">
     <div class="detail-expo">
-      <img src="../img/work-details/puerto-expo.jpg" alt="" />
+      <video
+        src="/src/img/work-details/glitch-clip-1.mp4"
+        loop
+        autoplay
+        muted
+        class="middle"
+      ></video>
+      <video
+        src="/src/img/work-details/glitch-clip-2.mp4"
+        loop
+        autoplay
+        muted
+        class="middle"
+      ></video>
+      <iframe
+        src="https://player.vimeo.com/video/1053301089?h=1047cfd060&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+        frameborder="0"
+        allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
+        style="width: 100%; height: 500"
+        title="GLITCH - artistic video"
+      ></iframe>
     </div>
   </block>
   <block name="credits">

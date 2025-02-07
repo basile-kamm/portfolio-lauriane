@@ -1,5 +1,5 @@
 <extends
-  src="./detail-work-layout.html"
+  src="./detail-work-layout-video.html"
   locals='{"title": "Chromakopia", "type": "animated poster", "value": "chromakopia"}'
 >
   <block name="header">
@@ -19,7 +19,32 @@
   </block>
   <block name="expo">
     <div class="detail-expo">
-      <img src="../img/work-details/puerto-expo.jpg" alt="" />
+      <video
+        src="/src/img/work-details/chromakopia-illu-1.mp4"
+        autoplay
+        muted
+        loop
+      ></video>
+      <div class="detail-expo-inner-flex chromakopia">
+        <video
+          src="/src/img/work-details/chromakopia-illu-2.mp4"
+          autoplay
+          muted
+          loop
+        ></video>
+        <video
+          src="/src/img/work-details/chromakopia-illu-3.mp4"
+          autoplay
+          muted
+          loop
+        ></video>
+        <video
+          src="/src/img/work-details/chromakopia-illu-4.mp4"
+          autoplay
+          muted
+          loop
+        ></video>
+      </div>
     </div>
   </block>
   <block name="credits">

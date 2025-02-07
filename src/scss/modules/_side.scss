@@ -3,16 +3,63 @@
 }
 
 .side-slider-container {
+  height: 25vh;
   overflow: hidden;
   white-space: nowrap;
 }
 
 .side-slide {
-  font-size: 200px;
+  font-size: 10vw;
   font-style: italic;
   display: inline-block;
   color: $white;
-  animation: slider 20s linear infinite;
+  animation: slider 17s linear infinite;
+}
+
+.side-img-slider-container {
+  display: flex;
+  overflow: hidden;
+  padding-bottom: 10vh;
+}
+
+.side-img-slider {
+  animation: sliderReverse 20s linear infinite;
+  height: 75vh;
+  display: flex;
+
+  img {
+    height: 100%;
+  }
+
+  .side-img-3 {
+    height: 45%;
+  }
+  .side-img-4 {
+    height: 55%;
+  }
+
+  .side-img-6 {
+    height: 35%;
+  }
+
+  .side-img-7 {
+    height: 65%;
+  }
+
+  .side-img-6 {
+    height: 35%;
+  }
+
+  .side-img-6 {
+    height: 35%;
+  }
+
+  .side-img-8 {
+    height: 46%;
+  }
+  .side-img-9 {
+    height: 54%;
+  }
 }
 
 @keyframes slider {
@@ -21,5 +68,13 @@
   }
   to {
     transform: translateX(-100%);
+  }
+}
+@keyframes sliderReverse {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
   }
 }

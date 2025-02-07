@@ -28,6 +28,7 @@
   border: 0.5px solid $dark;
   filter: grayscale(1);
   transition: filter 0.5s;
+  object-fit: cover;
 }
 
 .works-card-texts {

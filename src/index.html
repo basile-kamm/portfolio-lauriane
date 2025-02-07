@@ -5,8 +5,19 @@
       <section class="banner" id="top">
         <h2 class="banner-subtitle">Interactive Media Designer</h2>
         <h1 class="banner-title">Lauriane <br />Sauteur</h1>
-        <p class="banner-subtitle">Student</p>
+        <p class="banner-subtitle" data-i18n="title_student">Student</p>
       </section>
+      <nav class="language-nav">
+        <label class="language">
+          FR
+          <input type="radio" name="language" />
+        </label>
+        <p>|</p>
+        <label class="language">
+          EN
+          <input type="radio" name="language" checked />
+        </label>
+      </nav>
       <section class="intro">
         <div class="container">
           <div class="row">
@@ -88,7 +99,57 @@
             <div class="col-12 col-md-6">
               <include src="html-modules/work-card.html">
                 { "cardValue":"glitch", "cardTitle": "Glitch", "cardType":
-                "artistic video", "cardSubject": "3D/motion design" }
+                "artistic video", "cardSubject": "3D / motion design" }
+              </include>
+            </div>
+            <div class="col-12 col-md-6">
+              <include src="html-modules/work-card.html">
+                { "cardValue":"giu", "cardTitle": "Giu", "cardType":
+                "documentary", "cardSubject": "video" }
+              </include>
+            </div>
+            <div class="col-12 col-md-6">
+              <include src="html-modules/work-card.html">
+                { "cardValue":"miyazaki", "cardTitle": "Hayao Miyazaki",
+                "cardType": "magazine", "cardSubject": "graphic design" }
+              </include>
+            </div>
+            <div class="col-12 col-md-6">
+              <include src="html-modules/work-card.html">
+                { "cardValue":"chromakopia", "cardTitle": "Chromakopia",
+                "cardType": "animated poster", "cardSubject": "graphic design /
+                motion design" }
+              </include>
+            </div>
+            <div class="col-12 col-md-6">
+              <include src="html-modules/work-card.html">
+                { "cardValue":"abbie", "cardTitle": "Abbie", "cardType": "short
+                film", "cardSubject": "video" }
+              </include>
+            </div>
+            <div class="col-12 col-md-6">
+              <include src="html-modules/work-card.html">
+                { "cardValue":"fish-city", "cardTitle": "FishCity", "cardType":
+                "matte painting", "cardSubject": "graphic design" }
+              </include>
+            </div>
+            <div class="col-12 col-md-6">
+              <include src="html-modules/work-card.html">
+                { "cardValue":"nova-art", "cardTitle": "Nova Art Gallery",
+                "cardType": "e-panel", "cardSubject": "graphic design / motion
+                design" }
+              </include>
+            </div>
+            <div class="col-12 col-md-6">
+              <include src="html-modules/work-card.html">
+                { "cardValue":"art-nest", "cardTitle": "ArtNest", "cardType":
+                "app", "cardSubject": "UI design" }
+              </include>
+            </div>
+            <div class="col-12 col-md-6">
+              <include src="html-modules/work-card.html">
+                { "cardValue":"nitecore", "cardTitle": "Nitecore", "cardType":
+                "advertising", "cardSubject": "Video" }
               </include>
             </div>
           </div>
