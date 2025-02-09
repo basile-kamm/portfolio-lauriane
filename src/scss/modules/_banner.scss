@@ -1,13 +1,14 @@
 .banner {
   background-position: center;
   background-size: cover;
-  height: 100vh;
+  height: 100dvh;
   width: 100vw;
   display: flex;
   flex-direction: column;
+
   justify-content: flex-end;
-  padding: 2vw 3vw;
-  gap: 20px;
+  padding: 3dvh 3vw;
+  gap: 12px;
 }
 
 .banner-background {
@@ -43,6 +44,10 @@
 }
 
 @include breakpoint("medium") {
+  .banner {
+    padding: 2vw 3vw;
+    gap: 20px;
+  }
   .banner-subtitle {
     font-size: 3vw;
   }

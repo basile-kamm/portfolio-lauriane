@@ -32,10 +32,10 @@ document.addEventListener("DOMContentLoaded", function () {
       gsap.to(card.querySelector(".work-card-image"), {
         scrollTrigger: {
           trigger: card,
-          start: "top 70%",
-          end: "bottom 70%",
+          start: "top 60%",
+          end: "bottom 60%",
           toggleClass: "is-active",
-          markers: true,
+          // markers: true,
         },
       });
     });
