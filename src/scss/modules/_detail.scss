@@ -25,10 +25,12 @@
   font-size: 30px;
   font-style: italic;
   margin-bottom: 8px;
+  margin-left: 2px;
 }
 
 .detail-subject-container {
   display: flex;
+
   gap: 5px;
   margin-bottom: 10vh;
 }
@@ -37,7 +39,7 @@
   font-size: 16px;
   border: 1px solid $dark;
   border-radius: 5px;
-  padding: 0 10px;
+  padding: 0 10px 1px;
 }
 
 .detail-thumbnail {
@@ -58,7 +60,8 @@
 
 .art-nest,
 .fish-city,
-.maison {
+.maison,
+.chromakopia {
   position: relative;
   right: 0;
 }
@@ -170,6 +173,16 @@
       height: 40vh;
     }
   }
+}
+
+@include breakpoint("large") {
+  .detail-expo {
+    video,
+    img {
+      height: unset;
+      width: 100%;
+    }
+  }
   .detail-credits-container {
     flex-wrap: nowrap;
     justify-content: left;
@@ -182,16 +195,6 @@
     }
     &.software {
       order: 1;
-    }
-  }
-}
-
-@include breakpoint("large") {
-  .detail-expo {
-    video,
-    img {
-      height: unset;
-      width: 100%;
     }
   }
 }
