@@ -1,38 +1,58 @@
 <extends
-  src="./detail-work-layout-video.html"
-  locals='{"title": "Nova Art Gallery", "type": "e-panel", "value": "nova-art"}'
+  src="./en/detail-work-layout-video.html"
+  locals='{"title": "Glitch", "type": "artistic video", "value": "glitch"}'
 >
   <block name="header">
     <include src="./html-modules/burger.html"></include>
   </block>
   <block name="subject">
     <div class="detail-subject-container">
-      <p class="detail-subject">graphisme</p>
       <p class="detail-subject">motion design</p>
+      <p class="detail-subject">3D</p>
     </div>
   </block>
   <block name="text">
     <p class="detail-text">
-      Cette affiche animée, spécialement conçue pour un panneau publicitaire
-      numérique, a été réalisée dans le but de promouvoir une exposition dans la
-      galerie d’art fictive « Nova Art Gallery ».
+      The project was divided into two parts: <br />
+      <br class="mobile" />
+      The first was to create two video clips by modelling and animating a 3D
+      shape. <br />
+      <br class="mobile" />
+      The second stage involved selecting clips made by other students, which I
+      then edited to create an artistic video on the theme of glitch.
     </p>
   </block>
   <block name="expo">
     <div class="detail-expo">
       <video
-        src="/src/img/work-details/nova-art-expo.mp4"
+        src="/src/img/work-details/glitch-clip-1.mp4"
         loop
         autoplay
         muted
+        class="middle"
         playsinline
       ></video>
+      <video
+        src="/src/img/work-details/glitch-clip-2.mp4"
+        loop
+        autoplay
+        muted
+        class="middle"
+        playsinline
+      ></video>
+      <iframe
+        src="https://player.vimeo.com/video/1053301089?h=1047cfd060&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+        frameborder="0"
+        allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
+        style="width: 100%; height: 500"
+        title="GLITCH - artistic video"
+      ></iframe>
     </div>
   </block>
   <block name="credits">
     <div class="detail-credits-container">
       <div class="detail-credits software">
-        <h2 class="detail-credits-title">Fait avec:</h2>
+        <h2 class="detail-credits-title">Made with:</h2>
         <div class="detail-softwares">
           <svg
             width="29"
@@ -64,31 +84,7 @@
               </clipPath>
             </defs>
           </svg>
-          <svg
-            width="28"
-            height="27"
-            viewBox="0 0 28 27"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <g id="illustrator-logo" clip-path="url(#clip0_310_1445)">
-              <path
-                id="Vector"
-                d="M11.5627 8.91665H11.5421L10.1832 13.5978H12.9626L11.5627 8.91665ZM11.5627 8.91665H11.5421L10.1832 13.5978H12.9626L11.5627 8.91665ZM22.5011 0.117188H5.54727C2.97292 0.117188 0.895996 2.24736 0.895996 4.88773V21.6083C0.895996 24.2434 2.97292 26.3788 5.54727 26.3788H22.5062C25.0755 26.3788 27.1575 24.2487 27.1575 21.6083V4.88773C27.1575 2.25262 25.0806 0.117188 22.5062 0.117188H22.5011ZM16.978 18.6629H14.6909C14.6139 18.6734 14.537 18.6155 14.5165 18.5419L13.6191 15.87H9.54727L8.7165 18.5051C8.69599 18.605 8.60881 18.6734 8.50624 18.6629H6.44984C6.33189 18.6629 6.29599 18.5945 6.33189 18.463L9.85496 8.05932C9.88573 7.94887 9.92163 7.82264 9.96265 7.69114C10.0088 7.45446 10.0293 7.20725 10.0293 6.96005C10.0191 6.90219 10.0601 6.84959 10.1165 6.83907H12.9524C13.0396 6.83907 13.0857 6.87063 13.096 6.92849L17.0908 18.484C17.1216 18.605 17.0909 18.6629 16.9832 18.6629H16.978ZM20.696 18.4946C20.696 18.6155 20.6498 18.6734 20.5524 18.6734H18.4088C18.3011 18.6734 18.2447 18.605 18.2447 18.4946V9.85288C18.2447 9.74242 18.2908 9.69509 18.3883 9.69509H20.5524C20.6498 9.69509 20.696 9.75294 20.696 9.85288V18.4946ZM20.4703 8.36439C20.2191 8.63263 19.8447 8.7799 19.4755 8.75886C19.1165 8.76938 18.7626 8.62211 18.5011 8.36439C18.2498 8.08562 18.1165 7.71218 18.1267 7.33349C18.1165 6.94953 18.2601 6.59187 18.5216 6.33414C18.7832 6.07642 19.1319 5.93967 19.496 5.93967C19.8601 5.93967 20.2498 6.07642 20.4908 6.33414C20.7319 6.60239 20.8652 6.96005 20.8498 7.33349C20.8601 7.71744 20.7319 8.08562 20.4652 8.36439H20.4703ZM11.5421 8.91665L10.1832 13.5978H12.9626L11.5627 8.91665H11.5421Z"
-                fill="black"
-              />
-            </g>
-            <defs>
-              <clipPath id="clip0_310_1445">
-                <rect
-                  width="26.2564"
-                  height="26.2564"
-                  fill="white"
-                  transform="translate(0.895996 0.117188)"
-                />
-              </clipPath>
-            </defs>
-          </svg>
+          <img src="/src/img/skills/cine-4d.png" alt="" />
         </div>
       </div>
     </div>

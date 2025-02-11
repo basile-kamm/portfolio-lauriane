@@ -108,9 +108,14 @@ footer {
   }
 
   .footer-title {
-    font-size: 28vw;
+    font-size: 22vw;
     line-height: 50%;
     margin-left: -4vw;
+
+    &.en {
+      line-height: 50%;
+      font-size: 28vw;
+    }
 
     span {
       transform: translateX(20%);

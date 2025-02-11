@@ -5,7 +5,7 @@
   right: 0;
   bottom: 0;
   background: $white;
-  z-index: 4;
+  z-index: 11;
   transition: transform 0.5s;
 
   &.hidden {
@@ -93,6 +93,11 @@
 .burger-language-switcher {
   font-size: 26px;
   text-decoration: none;
+  transition: scale 0.4s;
+
+  &:hover {
+    scale: 1.1;
+  }
 }
 
 .burger-close-icon {
