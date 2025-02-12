@@ -6,7 +6,7 @@
     "clean:output": "rimraf dist",
     "clean:cache": "rimraf .parcel-cache",
     "dev": "npm run clean:cache && parcel src/index.html",
-    "build": "npm run clean:output && parcel build src/index.html src/en/index.html --public-url '.' --no-cache",
+    "build": "npm run clean:output && parcel build src/index.html --public-url '/' --no-cache",
     "cp:build": "mkdir -p dist/en/css && cp -r dist/css/* dist/en/css/ && mkdir -p dist/en/js && cp -r dist/js/* dist/en/js/ && mkdir -p dist/en/img && cp -r dist/img/* dist/en/img/ && mkdir -p dist/en/fonts && cp -r dist/fonts/* dist/en/fonts/ && mkdir -p dist/en/video && cp -r dist/video/* dist/en/video/"
   },
   "repository": {
@@ -31,6 +31,7 @@
     }
   },
   "devDependencies": {
+    "@parcel/resolver-glob": "^2.13.3",
     "@parcel/transformer-sass": "^2.12.0",
     "parcel": "^2.12.0",
     "parcel-namer-rewrite": "^2.10.3-rc.2",

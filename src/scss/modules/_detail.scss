@@ -142,6 +142,11 @@
 .detail-softwares {
   display: flex;
   gap: 10px;
+
+  img {
+    width: 29px;
+    height: 27px;
+  }
 }
 
 @include breakpoint("medium") {
