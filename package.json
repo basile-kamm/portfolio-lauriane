@@ -32,7 +32,7 @@
   },
   "devDependencies": {
     "@parcel/resolver-glob": "^2.13.3",
-    "@parcel/transformer-sass": "^2.12.0",
+    "@parcel/transformer-sass": "^2.13.3",
     "parcel": "^2.12.0",
     "parcel-namer-rewrite": "^2.10.3-rc.2",
     "posthtml-extend": "^0.6.5",
@@ -40,7 +40,8 @@
     "posthtml-inline-svg": "^0.2.0",
     "rimraf": "^6.0.1",
     "sass": "^1.69.5",
-    "sharp": "^0.31.3"
+    "sharp": "^0.33.5",
+    "svgo": "^3.3.2"
   },
   "dependencies": {
     "bootstrap": "^5.3.3",

@@ -1,166 +1,27 @@
-<extends src="base-layout.html">
-  <block name="content">
-    <include src="html-modules/burger.html"> </include>
-    <main>
-      <section class="banner" id="top">
-        <h2 class="banner-subtitle">
-          Interactive <br class="mobile" />
-          Media Designer <i>Élève</i>
-        </h2>
-        <h1 class="banner-title">Lauriane <br />Sauteur</h1>
-        <video
-          src="/src/img/banner-video.mp4"
-          loop
-          muted
-          autoplay
-          playsinline
-          class="banner-background"
-        ></video>
-      </section>
-      <section class="intro">
-        <div class="container">
-          <div class="row">
-            <div class="col-12 col-md-8 offset-md-2">
-              <h2 class="intro-title">Hello!</h2>
-              <div class="intro-texts">
-                <p class="intro-text">
-                  Je suis étudiante en Interactive Media Design et une vraie
-                  touche-à-tout dans l’univers créatif.
-                </p>
-                <p class="intro-text">
-                  Bien que j’aime explorer plein de domaines, j’avoue avoir un
-                  petit faible pour le montage vidéo… mais ça reste entre nous.
-                </p>
-                <p class="intro-text">
-                  Ce site est ma vitrine, une plongée dans mon univers et un
-                  aperçu de mon travail.
-                </p>
-              </div>
-              <a href="about.html" class="intro-cta"
-                >en savoir plus sur moi
-                <svg
-                  width="17"
-                  class="intro-cta-arrow"
-                  height="14"
-                  viewBox="0 0 17 14"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    id="Arrow 2"
-                    d="M1 6.1C0.502944 6.1 0.1 6.50294 0.1 7C0.1 7.49706 0.502944 7.9 1 7.9L1 6.1ZM16.3697 7.6364C16.7212 7.28492 16.7212 6.71508 16.3697 6.3636L10.6422 0.636039C10.2907 0.284567 9.72084 0.284567 9.36937 0.636039C9.0179 0.987511 9.0179 1.55736 9.36937 1.90883L14.4605 7L9.36937 12.0912C9.0179 12.4426 9.0179 13.0125 9.36937 13.364C9.72084 13.7154 10.2907 13.7154 10.6422 13.364L16.3697 7.6364ZM1 7.9L15.7333 7.9V6.1L1 6.1L1 7.9Z"
-                    fill="black"
-                  />
-                </svg>
-              </a>
-              <a href="#works" class="intro-cta-second desktop">
-                <svg
-                  width="17"
-                  class="intro-cta-second-arrow"
-                  height="14"
-                  viewBox="0 0 17 14"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    id="Arrow 2"
-                    d="M1 6.1C0.502944 6.1 0.1 6.50294 0.1 7C0.1 7.49706 0.502944 7.9 1 7.9L1 6.1ZM16.3697 7.6364C16.7212 7.28492 16.7212 6.71508 16.3697 6.3636L10.6422 0.636039C10.2907 0.284567 9.72084 0.284567 9.36937 0.636039C9.0179 0.987511 9.0179 1.55736 9.36937 1.90883L14.4605 7L9.36937 12.0912C9.0179 12.4426 9.0179 13.0125 9.36937 13.364C9.72084 13.7154 10.2907 13.7154 10.6422 13.364L16.3697 7.6364ZM1 7.9L15.7333 7.9V6.1L1 6.1L1 7.9Z"
-                    fill="black"
-                  />
-                </svg>
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="works" id="works">
-        <div class="container">
-          <div class="row">
-            <div class="col-12">
-              <h2 class="works-title">Mon travail</h2>
-              <div class="works-subtitle">
-                <p>projets</p>
-                <p>Selectionnés</p>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-12 col-md-6">
-              <include src="html-modules/work-card.html">
-                { "cardValue":"puerto", "cardTitle": "Puerto Mate", "cardType":
-                "publicité", "cardSubject": "vidéo" }
-              </include>
-            </div>
-            <div class="col-12 col-md-6">
-              <include src="html-modules/work-card.html">
-                { "cardValue":"furieuse", "cardTitle": "Furieuse", "cardType":
-                "trailer", "cardSubject": "motion design" }
-              </include>
-            </div>
-            <div class="col-12 col-md-6">
-              <include src="html-modules/work-card.html">
-                { "cardValue":"glitch", "cardTitle": "Glitch", "cardType":
-                "vidéo artistique", "cardSubject": "3D / motion design" }
-              </include>
-            </div>
-            <div class="col-12 col-md-6">
-              <include src="html-modules/work-card.html">
-                { "cardValue":"giu", "cardTitle": "Giu", "cardType":
-                "documentaire", "cardSubject": "vidéo" }
-              </include>
-            </div>
-            <div class="col-12 col-md-6">
-              <include src="html-modules/work-card.html">
-                { "cardValue":"miyazaki", "cardTitle": "Hayao Miyazaki",
-                "cardType": "magasine", "cardSubject": "graphisme" }
-              </include>
-            </div>
-            <div class="col-12 col-md-6">
-              <include src="html-modules/work-card.html">
-                { "cardValue":"chromakopia", "cardTitle": "Chromakopia",
-                "cardType": "poster animé", "cardSubject": "graphisme / motion
-                design" }
-              </include>
-            </div>
-            <div class="col-12 col-md-6">
-              <include src="html-modules/work-card.html">
-                { "cardValue":"abbie", "cardTitle": "Abbie", "cardType":
-                "court-métrage", "cardSubject": "vidéo" }
-              </include>
-            </div>
-            <div class="col-12 col-md-6">
-              <include src="html-modules/work-card.html">
-                { "cardValue":"fish-city", "cardTitle": "FishCity", "cardType":
-                "matte painting", "cardSubject": "graphisme" }
-              </include>
-            </div>
-            <div class="col-12 col-md-6">
-              <include src="html-modules/work-card.html">
-                { "cardValue":"nova-art", "cardTitle": "Nova Art Gallery",
-                "cardType": "e-panel", "cardSubject": "graphisme / motion
-                design" }
-              </include>
-            </div>
-            <div class="col-12 col-md-6">
-              <include src="html-modules/work-card.html">
-                { "cardValue":"art-nest", "cardTitle": "ArtNest", "cardType":
-                "app", "cardSubject": "UI design" }
-              </include>
-            </div>
-            <div class="col-12 col-md-6">
-              <include src="html-modules/work-card.html">
-                { "cardValue":"nitecore", "cardTitle": "Nitecore", "cardType":
-                "publicité", "cardSubject": "Video" }
-              </include>
-            </div>
-            <div class="col-12 col-md-6">
-              <include src="html-modules/work-card.html">
-                { "cardValue":"maison", "cardTitle": "Ramen Restaurant",
-                "cardType": "Modelling", "cardSubject": "3D" }
-              </include>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-    <include src="html-modules/footer.html"></include>
-  </block>
-</extends>
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Lauriane Sauteur</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="scss/main.scss" />
+    <link
+      href="https://fonts.cdnfonts.com/css/creato-display"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="img/icon.webp" />
+    <meta
+      name="description"
+      content="Bienvenue sur le portfolio de Lauriane Sauteur "
+    />
+  </head>
+  <body>
+    <div class="loader-container">
+      <img src="img/burger-menu-illu.png?as=webp" class="loader-img" alt="" />
+    </div>
+    <h1>Hello world</h1>
+    <a href="fr/index.html">Francais</a>
+
+    <script src="js/main.js" type="module"></script>
+  </body>
+</html>

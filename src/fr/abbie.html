@@ -1,10 +1,8 @@
 <extends
-  src="./detail-work-layout-video.html"
-  locals='{"title": "Nitecore", "type": "publicité", "value": "nitecore"}'
+  src="./fr/detail-work-layout-video.html"
+  locals='{"title": "Abbie", "type": "court-métrage", "value": "abbie"}'
 >
-  <block name="header">
-    <include src="./html-modules/burger.html"></include>
-  </block>
+  <block name="header"> </block>
   <block name="subject">
     <div class="detail-subject-container">
       <p class="detail-subject">vidéo</p>
@@ -12,19 +10,22 @@
   </block>
   <block name="text">
     <p class="detail-text">
-      Cette publicité fictive consiste à mettre en avant une lampe frontale de
-      la marque Nitecore. Le défi principal était d'explorer les jeux de lumière
-      de la lampe, tout en relevant le défi de tourner en pleine montagne.
+      Ce court-métrage suit Abbie, une jeune femme parfaite en apparence, dont
+      une série d'irritations quotidiennes se transforment en actes de vengeance
+      violents.
+      <br class="mobile" /><br class="mobile" />Son apparence angélique masque
+      une rage incontrôlable, culminant dans un acte irréversible qui révèle sa
+      véritable nature sombre.
     </p>
   </block>
   <block name="expo">
     <div class="detail-expo">
       <iframe
-        src="https://player.vimeo.com/video/1053844795?h=26f074ec5e&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+        src="https://player.vimeo.com/video/1053298067?h=dea9db8cf8&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
         frameborder="0"
         allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
         style="width: 100%; height: 500"
-        title="NITECORE - advertising"
+        title="ABBIE - short film"
       ></iframe>
     </div>
   </block>
@@ -32,13 +33,25 @@
     <div class="detail-credits-container">
       <div class="detail-credits">
         <h2 class="detail-credits-title">Réalisation</h2>
+        <p class="detail-credits-text">Clémentine Couchet</p>
+        <p class="detail-credits-text">Anaïs Chassot</p>
         <p class="detail-credits-text">Lauriane Sauteur</p>
+      </div>
+      <div class="detail-credits">
+        <h2 class="detail-credits-title">Direction artistique</h2>
+        <p class="detail-credits-text">Yuma Comazzi</p>
+        <p class="detail-credits-text">Jeanne Sciboz</p>
+        <p class="detail-credits-text">Meg Roulin</p>
+      </div>
+      <div class="detail-credits">
+        <h2 class="detail-credits-title">Son</h2>
+        <p class="detail-credits-text">Flavio Rotunno</p>
+        <p class="detail-credits-text">Meg Roulin</p>
         <p class="detail-credits-text">Basile Kamm</p>
       </div>
       <div class="detail-credits">
         <h2 class="detail-credits-title">Montage</h2>
         <p class="detail-credits-text">Lauriane Sauteur</p>
-        <p class="detail-credits-text">Basile Kamm</p>
       </div>
       <div class="detail-credits software">
         <h2 class="detail-credits-title">Fait avec:</h2>
@@ -69,10 +82,6 @@
             </defs>
           </svg>
         </div>
-      </div>
-      <div class="detail-credits">
-        <h2 class="detail-credits-title">Musique</h2>
-        <p class="detail-credits-text">Noé Coen</p>
       </div>
     </div>
   </block>

@@ -1,6 +1,16 @@
 <extends src="en/base-layout-en.html">
   <block name="content">
-    <include src="en/html-modules/burger.html"></include>
+    <extends
+      src="./html-modules/burger.html"
+      locals='{
+        "burgerDirection": "fr", 
+        "burgerAbout": "About", 
+        "burgerWorks": "My work", 
+        "burgerColor": "white"
+      }'
+    >
+      <block name="burger-language">FR | <b>EN</b></block>
+    </extends>
     <main>
       <section class="about">
         <div class="container">
@@ -28,7 +38,7 @@
             </div>
             <div class="col-12">
               <img
-                src="/src/img/lolo.jpg?as=webp"
+                src="../img/lolo.jpg?as=webp"
                 alt="Selfie de Lauriane"
                 class="about-resume-img"
               />
@@ -233,7 +243,7 @@
                     </defs>
                   </svg>
                   <img
-                    src="/src/img/skills/cine-4d.png?as=webp&width=100"
+                    src="../img/skills/cine-4d.png?as=webp&width=100"
                     alt=""
                     width="28"
                     height="27"
@@ -256,7 +266,7 @@
           <div class="row">
             <div class="col-4">
               <img
-                src="/src/img/burger-menu-illu.png"
+                src="../img/burger-menu-illu.png"
                 alt=""
                 class="about-quote-img"
               />
@@ -279,57 +289,57 @@
           <div class="side-img-slider">
             <div class="side-img-col">
               <img
-                src="/src/img/side-stuff/side-img-1.jpg?as=webp&width=720"
+                src="../img/side-stuff/side-img-1.jpg?as=webp&width=720"
                 alt=""
                 class="side-img-1"
               />
             </div>
             <div class="side-img-col">
               <img
-                src="/src/img/side-stuff/side-img-2.jpg?as=webp&width=720"
+                src="../img/side-stuff/side-img-2.jpg?as=webp&width=720"
                 alt=""
                 class="side-img-2"
               />
             </div>
             <div class="side-img-col">
               <img
-                src="/src/img/side-stuff/side-img-3.jpg?as=webp&width=720"
+                src="../img/side-stuff/side-img-3.jpg?as=webp&width=720"
                 alt=""
                 class="side-img-3"
               />
               <img
-                src="/src/img/side-stuff/side-img-4.jpg?as=webp&width=720"
+                src="../img/side-stuff/side-img-4.jpg?as=webp&width=720"
                 alt=""
                 class="side-img-4"
               />
             </div>
             <div class="side-img-col">
               <img
-                src="/src/img/side-stuff/side-img-5.jpg?as=webp&width=720"
+                src="../img/side-stuff/side-img-5.jpg?as=webp&width=720"
                 alt=""
                 class="side-img-5"
               />
             </div>
             <div class="side-img-col">
               <img
-                src="/src/img/side-stuff/side-img-6.jpg?as=webp&width=720"
+                src="../img/side-stuff/side-img-6.jpg?as=webp&width=720"
                 alt=""
                 class="side-img-6"
               />
               <img
-                src="/src/img/side-stuff/side-img-7.jpg?as=webp&width=720"
+                src="../img/side-stuff/side-img-7.jpg?as=webp&width=720"
                 alt=""
                 class="side-img-7"
               />
             </div>
             <div class="side-img-col">
               <img
-                src="/src/img/side-stuff/side-img-8.jpg?as=webp&width=720"
+                src="../img/side-stuff/side-img-8.jpg?as=webp&width=720"
                 alt=""
                 class="side-img-8"
               />
               <img
-                src="/src/img/side-stuff/side-img-9.jpg?as=webp&width=720"
+                src="../img/side-stuff/side-img-9.jpg?as=webp&width=720"
                 alt=""
                 class="side-img-9"
               />
@@ -338,57 +348,57 @@
           <div class="side-img-slider">
             <div class="side-img-col">
               <img
-                src="/src/img/side-stuff/side-img-1.jpg?as=webp&width=720"
+                src="../img/side-stuff/side-img-1.jpg?as=webp&width=720"
                 alt=""
                 class="side-img-1"
               />
             </div>
             <div class="side-img-col">
               <img
-                src="/src/img/side-stuff/side-img-2.jpg?as=webp&width=720"
+                src="../img/side-stuff/side-img-2.jpg?as=webp&width=720"
                 alt=""
                 class="side-img-2"
               />
             </div>
             <div class="side-img-col">
               <img
-                src="/src/img/side-stuff/side-img-3.jpg?as=webp&width=720"
+                src="../img/side-stuff/side-img-3.jpg?as=webp&width=720"
                 alt=""
                 class="side-img-3"
               />
               <img
-                src="/src/img/side-stuff/side-img-4.jpg?as=webp&width=720"
+                src="../img/side-stuff/side-img-4.jpg?as=webp&width=720"
                 alt=""
                 class="side-img-4"
               />
             </div>
             <div class="side-img-col">
               <img
-                src="/src/img/side-stuff/side-img-5.jpg?as=webp&width=720"
+                src="../img/side-stuff/side-img-5.jpg?as=webp&width=720"
                 alt=""
                 class="side-img-5"
               />
             </div>
             <div class="side-img-col">
               <img
-                src="/src/img/side-stuff/side-img-6.jpg?as=webp&width=720"
+                src="../img/side-stuff/side-img-6.jpg?as=webp&width=720"
                 alt=""
                 class="side-img-6"
               />
               <img
-                src="/src/img/side-stuff/side-img-7.jpg?as=webp&width=720"
+                src="../img/side-stuff/side-img-7.jpg?as=webp&width=720"
                 alt=""
                 class="side-img-7"
               />
             </div>
             <div class="side-img-col">
               <img
-                src="/src/img/side-stuff/side-img-9.jpg?as=webp&width=720"
+                src="../img/side-stuff/side-img-9.jpg?as=webp&width=720"
                 alt=""
                 class="side-img-9"
               />
               <img
-                src="/src/img/side-stuff/side-img-8.jpg?as=webp&width=720"
+                src="../img/side-stuff/side-img-8.jpg?as=webp&width=720"
                 alt=""
                 class="side-img-8"
               />
@@ -397,6 +407,6 @@
         </div>
       </section>
     </main>
-    <include src="en/html-modules/footer.html"></include>
+    <include src="./html-modules/footer-en.html"></include>
   </block>
 </extends>

@@ -20,11 +20,11 @@
         <div class="burger-top-contaier">
           <!-- href="/src/en/index.html" -->
           <a
-            href="en/index.html"
+            href="../{{burgerDirection}}/index.html"
             class="burger-language-switcher"
             aria-label="English to french switcher"
           >
-            <b>FR</b> | EN
+            <block name="burger-language"></block>
           </a>
           <svg
             class="burger-close-icon"
@@ -52,21 +52,15 @@
         </div>
       </div>
       <div class="col-12 col-md-5">
-        <a
-          href="/src/index.html"
-          class="burger-img-container"
-          aria-label="Go Home"
-        >
-          <img src="/src/img/burger-menu-illu.png" alt="" class="burger-img" />
+        <a href="index.html" class="burger-img-container" aria-label="Go Home">
+          <img src="../img/burger-menu-illu.png" alt="" class="burger-img" />
         </a>
       </div>
       <div class="col-12 col-md-6">
         <nav class="burger-items">
-          <a href="/src/about.html" class="burger-item" data-i18n="burger_about"
-            >À mon sujet</a
-          >
-          <a href="/src/index.html#works" class="burger-item">Mon travail</a>
-          <a href="/src/contact.html" class="burger-item">Contact</a>
+          <a href="about.html" class="burger-item">{{burgerAbout}}</a>
+          <a href="index.html#works" class="burger-item">{{burgerWorks}}</a>
+          <a href="contact.html" class="burger-item">Contact</a>
         </nav>
       </div>
     </div>

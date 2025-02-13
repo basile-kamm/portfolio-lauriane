@@ -1,4 +1,4 @@
-<extends src="base-layout.html">
+<extends src="fr/base-layout.html">
   <block name="content">
     <block name="header"></block>
     <main>
@@ -6,7 +6,7 @@
         <div class="row">
           <div class="col-12 col-md-5">
             <a
-              href="/src/index.html#works"
+              href="index.html#works"
               class="detail-return"
               aria-label="Go back to work"
             >
@@ -28,17 +28,13 @@
             <p class="detail-type">{{type}}</p>
             <block name="subject"></block>
           </div>
-          <div class="col-12 col-md-4 offset-md-3">
-            <div class="detail-thumbnail">
-              <video
-                src="/src/img/work-details/{{value}}-thumbnail.mp4"
-                autoplay
-                loop
-                muted
-                playsinline
-                class="{{value}}"
-              ></video>
-            </div>
+          <div class="col-12 col-md-5 offset-md-2">
+            <img
+              src="../img/work-details/{{value}}-thumbnail.webp"
+              alt=""
+              class="detail-thumbnail {{value}}"
+              loading="lazy"
+            />
           </div>
           <div class="col-12 col-md-7">
             <block name="text"></block>

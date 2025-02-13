@@ -1,9 +1,17 @@
 <extends src="en/base-layout-en.html">
   <block name="content">
-    <include src="en/html-modules/burger.html">
-      {"burgerColor": "dark"}
-    </include>
-    <include src="en/html-modules/footer.html">
+    <extends
+      src="./html-modules/burger.html"
+      locals='{
+        "burgerDirection": "fr", 
+        "burgerAbout": "About", 
+        "burgerWorks": "My work", 
+        "burgerColor": "dark"
+      }'
+    >
+      <block name="burger-language">FR | <b>EN</b></block>
+    </extends>
+    <include src="./html-modules/footer-en.html">
       { "arrowDisplay": "hidden" }
     </include>
   </block>
